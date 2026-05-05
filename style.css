@@ -414,6 +414,14 @@ nav {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
+  body {
+    min-height: unset;
+  }
+
+  .bg-grid {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -427,6 +435,8 @@ nav {
   /* compact terminal for mobile */
   .term {
     display: flex;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   .term-body {
