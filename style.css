@@ -251,6 +251,9 @@ nav {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   margin: 8px 8px 0;
+  flex-shrink: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .term-img {
@@ -423,9 +426,11 @@ nav {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 500px);
+    justify-content: center;
     min-height: auto;
     gap: 1.5rem;
+    padding: 2rem 1.25rem;
   }
 
   .nav-inner {
